@@ -1,0 +1,20 @@
+{
+	"name": "atcoder-python",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "atcoder-env",
+	"workspaceFolder": "/atcoder",
+    "shutdownAction": "stopCompose",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-python.python"
+	],
+
+	// Use the non-root user you've defined in your Dockerfile
+	"remoteUser": "vscode"
+}
